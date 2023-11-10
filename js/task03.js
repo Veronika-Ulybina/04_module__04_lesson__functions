@@ -5,15 +5,15 @@
 		let totalSum = sum;
 
 		if (amount > 10) {
-			totalSum = totalSum - totalSum * 0.03;
+			totalSum -= totalSum * 0.03;
 		}
 		
 		if (totalSum > 30000) {
-			totalSum = totalSum - (totalSum - 30000) * 0.15;
+			totalSum -= (totalSum - 30000) * 0.15;
 		}
 		
 		if (promocode === 'METHED') {
-			totalSum = totalSum - totalSum * 0.1;
+			totalSum -= totalSum * 0.1;
 		}
 
 		if (promocode === 'G3H2Z1' && totalSum > 2000) {
